@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Muhammad Alfiansyah 💙</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#071a35;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Slide */
+.slide{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+.slide:nth-child(odd){
+    background:#0B2D5C;
+}
+
+.slide:nth-child(even){
+    background:#123F7A;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+h2{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+p{
+    max-width:700px;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.btn{
+    margin-top:20px;
+    background:white;
+    color:#0B2D5C;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+/* Foto */
+.foto{
+    width:320px;
+    max-width:90%;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(255,255,255,.3);
+    margin-bottom:20px;
+}
+
+/* Musik */
+.music{
+    position:fixed;
+    top:10px;
+    right:10px;
+    z-index:999;
+}
+
+/* Hati */
+.heart{
+    position:fixed;
+    top:-10px;
+    color:#8EC5FF;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- Musik -->
+<div class="music">
+<audio controls autoplay loop>
+    <source src="lg.php.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<!-- Slide 1 -->
+<section class="slide">
+    <h1>🎂 Happy Birthday</h1>
+    <h1>Muhammad Alfiansyah 💙</h1>
+
+    <p>
+    Hari ini adalah hari spesial untuk seseorang yang sangat berarti.
+    Semoga semua impian dan harapanmu menjadi kenyataan.
+    </p>
+
+    <a href="#slide2" class="btn">Mulai ➜</a>
+</section>
+
+<!-- Slide 2 -->
+<section id="slide2" class="slide">
+    <img src="pin.php.jpeg" class="foto">
+
+    <h2>Untuk Cintaku</h2>
+
+    <p>
+    Terima kasih sudah hadir dan menjadi bagian dari cerita yang indah.
+    Senyummu selalu mampu membuat hari terasa lebih baik.
+    </p>
+
+    <a href="#slide3" class="btn">Lanjut ➜</a>
+</section>
+
+<!-- Slide 3 -->
+<section id="slide3" class="slide">
+    <img src="al.php.jpeg" class="foto">
+
+    <h2>✨ Doa Terbaik</h2>
+
+    <p>
+    Semoga kamu selalu diberikan kesehatan, kebahagiaan,
+    kesuksesan, dan kemudahan dalam setiap langkah hidupmu.
+    </p>
+
+    <a href="#slide4" class="btn">Lanjut ➜</a>
+</section>
+
+<!-- Slide 4 -->
+<section id="slide4" class="slide">
+
+    <h2>💌 Surat Kecil Untukmu</h2>
+
+    <p>
+    Selamat ulang tahun Muhammad Alfiansyah.
+    Terima kasih untuk setiap perhatian, tawa,
+    dan kenangan yang telah tercipta.
+    Semoga di usia yang baru ini kamu menjadi pribadi
+    yang lebih kuat, lebih bahagia, dan lebih sukses.
+    Aku berharap semua hal baik selalu menghampirimu.
+    </p>
+
+    <a href="#slide5" class="btn">Lanjut ➜</a>
+
+</section>
+
+<!-- Slide 5 -->
+<section id="slide5" class="slide">
+
+    <h1>💙 Happy Birthday 💙</h1>
+
+    <h2>Muhammad Alfiansyah</h2>
+
+    <p>
+    Terima kasih telah menjadi bagian dari cerita yang indah.
+    Semoga hari ini menjadi awal dari tahun yang penuh kebahagiaan,
+    cinta, dan kesuksesan.
+    </p>
+
+    <br>
+
+    <h2>🎂✨🎉</h2>
+
+</section>
+
+<script>
+for(let i=0;i<50;i++){
+
+let heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="💙";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(15+Math.random()*25)+"px";
+
+heart.style.animationDuration=(5+Math.random()*8)+"s";
+
+document.body.appendChild(heart);
+
+}
+</script>
+
+</body>
+</html>
